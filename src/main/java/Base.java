@@ -16,7 +16,7 @@ public class Base {
         num1 = scanner.nextDouble();
         System.out.println("Введите второе число:");
         num2 = scanner.nextDouble();
-        System.out.println("Выберите Пункт необходимой операции " + "(1 = сложение, 2 = вычитание, 3 = деление, 4 = умножение) ");
+        System.out.println("Выберите Пункт необходимой операции (1 = сложение, 2 = вычитание, 3 = деление, 4 = умножение)");
         d = scanner.nextInt();
         double result;
         switch (d){
