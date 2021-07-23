@@ -16,8 +16,6 @@ public class Practice3 {
         else {
             System.err.println("ERROR");
         }
-
-
     }
     //метод калькулятор дробных чисел
     public static void calculate(){
@@ -59,11 +57,16 @@ public class Practice3 {
         System.out.println("Введите размерность массива");
         int n = scanner.nextInt();
         String[] mas = new String[n];
+        int maxElement = 0;
+        String maxslovo = null;
         for (int i =0; i < mas.length; i++){
             System.out.println("Введите " + (i+1) + " слово");
             mas[i] = scanner.next();
+            if (maxElement < mas[i].length()) {
+                maxElement = mas[i].length();
+                maxslovo = mas[i];
+            }
         }
-        Arrays.sort(mas);
-        System.out.println("Максимальный элемент " + mas[mas.length-1]);
+        System.out.println("Максимальный элемент " + maxslovo);
     }
 }
