@@ -67,6 +67,7 @@ public class Practice3 {
                 maxslovo = mas[i];
             }
         }
-        System.out.println("Максимальный элемент " + maxslovo);
+        System.out.println("Максимальный элемент: " + maxslovo);
+        System.out.println("Количество символов в слове: " + maxElement);
     }
 }
