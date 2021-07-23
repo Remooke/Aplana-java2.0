@@ -30,7 +30,7 @@ public class Base {
                 break;
             case 3:
                 result = num1 / num2;
-                System.out.printf("Деление = %.4f", result );
+                System.out.printf("Частное = %.4f", result );
                 break;
             case 4:
                 result = num1 * num2;
