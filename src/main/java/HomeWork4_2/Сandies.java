@@ -1,4 +1,4 @@
-package HomeWork4;
+package HomeWork4_2;
 
 public class Сandies extends Sweet{
 
