@@ -9,7 +9,7 @@ public class Read {
 
     public static double numReader(){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите число");
+        System.out.println("Введите число:");
         num = scanner.nextDouble();
         return num;
     }
