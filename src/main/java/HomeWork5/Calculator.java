@@ -3,9 +3,6 @@ package HomeWork5;
 public class Calculator {
 
     public static void main(String[] args) {
-        double number1;
-        double number2;
-        double result;
         System.out.println("Предлагается в начале ввести числа, а потом выбрать операцию для этих чисел");
         System.out.println("----------------------------------------------------------------------------");
         Calculations calculations1 = new Calculations(Read.numReader(), Read.numReader());
