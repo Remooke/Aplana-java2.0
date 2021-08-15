@@ -3,11 +3,31 @@ package HomeWork5;
 public class Calculator {
 
     public static void main(String[] args) {
-        System.out.println("---------ПЕРВОЕ ВЫЧИСЛЕНИЕ----------");
-        Calculations calculations1 = new Calculations(Read.numReader(), Read.operationReader(), Read.numReader());
-        calculations1.calc(); //вычисление и результат
-        System.out.println("---------ВТОРОЕ ВЫЧИСЛЕНИЕ----------");
-        Calculations calculations2 = new Calculations(Read.numReader(), Read.operationReader(), Read.numReader());
-        calculations2.calc(); //вычисление и результат
+        double number1;
+        double number2;
+        double result;
+        System.out.println("Предлагается в начале ввести числа, а потом выбрать операцию для этих чисел");
+        System.out.println("----------------------------------------------------------------------------");
+        Calculations calculations1 = new Calculations(Read.numReader(), Read.numReader());
+            switch (Read.operationReader()) {
+                case "+":
+                    System.out.printf("Сумма = %.4f\n", Calculations.summ());
+                    break;
+                case "-":
+                    System.out.printf("Разность = %.4f\n", Calculations.substraction());
+                    break;
+                case "/":
+                    System.out.printf("Частное = %.4f\n", Calculations.division());
+                    break;
+                case "*":
+                    System.out.printf("Произведение = %.4f\n", Calculations.multiplication());
+                    break;
+                default:
+                    System.err.println("ERROR. Выберите корректную операцию");
+            }
+            System.out.println("------------------------------------\n");
+
+
+
     }
 }
