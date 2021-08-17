@@ -24,7 +24,7 @@ public class Calculator {
                     System.out.printf("Произведение = %.4f\n", Calculations.multiplication());
                     break;
                 default:
-                    System.err.println("ERROR. Что-то не то, если введен некорректный опператор, то до этой ошибке не доходит, введен эксепшн");
+                    System.err.println("ERROR. Что-то не то, если введен некорректный опператор, то до этой ошибке не доходит, введен эксепшн в Calculation");
             }
             System.out.println("------------------------------------\n");
         } catch (InputMismatchException e) {
