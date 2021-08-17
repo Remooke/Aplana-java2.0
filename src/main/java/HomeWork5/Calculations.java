@@ -9,6 +9,7 @@ public class Calculations {
         this.num2 = num2;
     }
 
+
     public static double summ() {
         return num1+num2;
     }
