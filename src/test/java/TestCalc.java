@@ -42,4 +42,11 @@ public class TestCalc {
         Assert.assertEquals(5,Read.getNum(), 0);
     }
 
+    @Test(expected = ArithmeticException.class)
+    public void testDivisionZero(){
+        Calculations.setNum1(-2);
+        Calculations.setNum2(0);
+        Assert.assertEquals("Ошибка деления на ноль", Calculations.division());
+    }
+
 }
