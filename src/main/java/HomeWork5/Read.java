@@ -34,10 +34,10 @@ public class Read {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Выберите Пункт необходимой операции ('+' сложение, '-' вычитание, '/' = деление, '*' = умножение)");
         operation = scanner.next();
-        if (operation.equals("+") || operation.equals("+") || operation.equals("+") || operation.equals("+")) {
+        if (operation.equals("+") || operation.equals("-") || operation.equals("/") || operation.equals("*")) {
             return operation;
         } else {
-            throw new Exception("Ошибка при выборе операции. Выберите корректную операцию");
+            throw new Exception();
         }
 
     }

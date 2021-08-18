@@ -1,10 +1,13 @@
 import HomeWork5.Calculations;
+import HomeWork5.Calculator;
 import HomeWork5.Read;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class TestCalc {
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
+public class TestCalc {
     @Test
     public void testCalcSumm(){
         Calculations.setNum1(0);
@@ -23,21 +26,14 @@ public class TestCalc {
     public void testCalcMult(){
         Calculations.setNum1(-2);
         Calculations.setNum2(-1);
-        Assert.assertEquals("Некорректное умножение",2,Calculations.multiplication(), 0);
+        Assert.assertEquals("Некорректное умножение",2, (Double) Calculations.multiplication(), 0);
     }
 
     @Test
     public void testCalcDivision(){
         Calculations.setNum1(-2);
         Calculations.setNum2(-1);
-        Assert.assertEquals("Некорректное деление",2,Calculations.multiplication(), 0);
-    }
-
-    @Test
-    public void testCalcDivisionZero(){
-        Calculations.setNum1(-2);
-        Calculations.setNum2(0);
-        Assert.assertEquals("Некорректное деление на 0",0,Calculations.multiplication(), 0);
+        Assert.assertEquals("Некорректное деление на ноль",2, (Double) Calculations.multiplication(), 0);
     }
 
     @Test
@@ -45,6 +41,5 @@ public class TestCalc {
         Read.setNum(5);
         Assert.assertEquals(5,Read.getNum(), 0);
     }
-
 
 }

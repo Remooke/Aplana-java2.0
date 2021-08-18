@@ -7,6 +7,7 @@ public class Calculator {
     public static void main(String[] args) {
         System.out.println("Предлагается в начале ввести числа, а потом выбрать операцию для этих чисел");
         System.out.println("----------------------------------------------------------------------------");
+        String error;
         try {
             Calculations calculations1 = new Calculations(Read.numReader(), Read.numReader());
 
@@ -29,9 +30,14 @@ public class Calculator {
             System.out.println("------------------------------------\n");
         } catch (InputMismatchException e) {
             System.out.println("Ошибка. Возможен ввод только чисел в корректном формате. Ошибка: " + e);
-
+        } catch (ArithmeticException e) {
+            System.out.println("Ошибка.Делить на ноль нельзя");
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("Ошибка.Выберите корректный оператор");
         }
     }
+
 }
+
+
+

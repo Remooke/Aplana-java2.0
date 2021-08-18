@@ -1,5 +1,7 @@
 package HomeWork5;
 
+import java.io.Serializable;
+
 public class Calculations {
     private static double num1;
     private static double num2;
@@ -27,16 +29,24 @@ public class Calculations {
     }
 
     public static double summ() {
-        return num1+num2;
+        return num1 + num2;
     }
+
     public static double substraction() {
-        return num1-num2;
+        return num1 - num2;
     }
-    public static double multiplication() {
-        return num1*num2;
+
+    public static Serializable multiplication() {
+                return num1 * num2;
     }
-    public static double division() {
-        return num1/num2;
+
+    public static double division () {
+            if (num2 ==0){
+              throw new ArithmeticException();
+            }
+            else  {
+                return num1 / num2;
+          }
     }
 
 }
